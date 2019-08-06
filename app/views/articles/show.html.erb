@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <div class="card p-4">
+    <h2><%= @article.title %></h2>
+    <p><%= @article.content %></p>
+  </div>
+  <div class="card p-4">
+  <%= link_to 'back to the list', articles_path, class: "btn btn-outline-dark mr-auto mb-2"%>
+  <p><%= link_to 'destroy this article',  article_path(@article), method: :delete, data: { confirm: 'are you sure?'}, class: "btn btn-outline-dark mr-auto" %></p>
+  </div>
+</div>
+
+
+
+
+
+
